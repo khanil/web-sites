@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лемур</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="img/logo.png">
+        <section class="header-contacts">
+          <span class="phone">+7 (495) 640 72 22</span>
+          <p>наши специалисты ответят на все ваши вопросы с 11:00 до 21:00, без выходных</p>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="">Женская</a></li>
+            <li><a href="">Мужская</a></li>
+            <li><a href="">Бренды</a></li>
+            <li><a href="">Распродажа</a></li>
+            <li><a href="">Блог</a></li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <a href="#">Вход</a>
+        </div>
+        <div class="basket">
+          В <a href="#">корзине</a> 5 товаров на 10 768 &#8381;
+        </div>    
+        <section class="header-sign-in" hidden="">
+          <a href="#">Вход</a>
+          <form action="">
+            <label for="user-mail">Эл. почта</label>
+            <input name="user-mail" type="email" required>
+            <label for="user-pass">Пароль</label>
+            <div>
+              <input name="user-pass" type="password" placeholder="DuRQl" required>
+              <label class="visible-password-checkbox">
+                <input type="checkbox" name="show-password" /><div></div>
+              </label>
+            </div>
+            <a href="#" class="remind-password">Забыли пароль?</a>
+            <button>вход</button>
+          </form>
+        </section>    
+      </header>
+      <section class="main">
+       <section class="checkout-container">
+        <section class="checkout-steps">
+          <span class="active">Корзина</span>
+          <span class="checkout-arrow"></span>
+          <span>Доставка</span>
+          <span class="checkout-arrow"></span>
+          <span>Оплата</span>
+        </section>
+        <section class="item">
+          <img src="img/dress2.png">
+          <span class="item-name">Платье Ulyana Sergeenko</span>
+          <p>
+            Страна: Китай<br/>
+            Состав: 98% Cotton 2% Elastane<br/>
+            Артикул: D3769
+          </p>
+          <form action="">
+            <label>Размер:</label>
+            <section class="size-selection">
+              <label class="select-btn">
+              <input type="radio" name="size" required checked/><span>xs</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>s</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>m</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>l</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>xl</span>
+              </label>
+            </section>
+            <label>Количество:</label>
+            <input type="number" min="0" value="0">
+            <section class="item-price">
+              <span>2 &#215; 4500 ₽ = </span><span>9000 ₽</span>
+            </section>
+            <button class="remove-btn"></button>
+          </form>
+        </section>
+        <section class="item">
+          <img src="img/dress2.png">
+          <span class="item-name">Платье Ulyana Sergeenko</span>
+          <p>
+            Страна: Китай<br/>
+            Состав: 98% Cotton 2% Elastane<br/>
+            Артикул: D3769
+          </p>
+          <form action="">
+            <label>Размер:</label>
+            <section class="size-selection">
+              <label class="select-btn">
+              <input type="radio" name="size" required checked/><span>xs</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>s</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>m</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>l</span>
+              </label>
+              <label class="select-btn">
+                <input type="radio" name="size" required/><span>xl</span>
+              </label>
+            </section>
+            <label>Количество:</label>
+            <input type="number" min="0" value="0">
+            <section class="item-price">
+              <span>2 &#215; 4500 ₽ = </span><span>9000 ₽</span>
+            </section>
+            <button class="remove-btn"></button>
+          </form>
+        </section>
+        <section class="checkout-next-step">
+          <form class="promo-code" action="">
+            <span>Промо код:</span>
+            <input type="text">
+            <input type="submit" value="применить">
+          </form>
+          <section class="result-price">
+            <span>16 300 ₽ &#8722; 10%</span>
+            <span>Итого, без доставки: 14 670 ₽</span>
+            <button class="checkout-goto-next-step">выбрать способ доставки</button>
+          </section>
+        </section>
+       </section>
+      </section>
+      <footer class="footer">
+        <nav>
+          <ul>
+            <li><a href="#">Женская</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Мужская</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Распродажа</a></li>
+            <li><a href="#">Способы оплаты</a></li>
+            <li><a href="#">Блог</a></li> 
+          </ul>
+        </nav>
+        <div>
+          <p>&copy;&nbsp;2010&ndash;2015<br/>Show-room Лемур</p>
+          <p>Социальные сети:<br/><a href="#">Instagram</a>, <a href="">Vkontakte</a></p>
+        </div>
+        <div class="footer-contacts">
+          <span class="phone">+7 (495) 640 72 22</span>
+          <p>наши специалисты ответят<br/>на ваши вопросы ежедневно<br/>с 11:00 до 21:00. Метро Маяковская,<br/>Дмитровский переулок, дом 8<br/><a href="#">Показать на карте</a></p>
+        </div>
+        <div class="footer-subscribe">
+          <span>Рассылка</span>
+          <p>Последние новости магазина, акции и скидки.<br/>Засыпать рассылками не будем!</p>
+          <form action="">
+            <input type="email" placeholder="Ваша электронная почта" required>
+            <button>подписаться</button>
+          </form>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

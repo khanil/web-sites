@@ -1,0 +1,1338 @@
+/*Шрифты*/
+@font-face {
+  font-family: 'PT Sans';
+  src: url('./fonts/PTS55F.TTF');
+}
+
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: url('./fonts/PTS75F.TTF');
+}
+
+@font-face {
+  font-family: 'DaxlinePro Bold';
+  src: url('./fonts/DaxlinePro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'DaxlinePro Extra Bold';
+  src: url('./fonts/DaxlinePro-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'PT Serif Italic';
+  src: url('./fonts/PTF56F.TTF');
+}
+
+@font-face {
+  font-family: 'PT Serif Bold Italic';
+  src: url('./fonts/PTF76F.TTF');
+}
+
+/*Общие*/
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  min-width: 1280px;
+}
+
+a {
+  color: #010101;
+}
+
+nav ul {
+  list-style: none;
+  font-weight: 400;
+}
+
+.phone {
+  font-family: 'PT Sans Bold', sans-serif;
+  font-size: 15px;
+  color: #333132;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+/*  height: 1353px;*/
+/*  background-image: url(img/back.png);*/
+}
+
+input {
+  height: 32px;
+  font-family: inherit;
+  color: #333132;
+  width: 228px;
+  border: 1px #9D9FA2 solid;
+}
+
+button, input[type=submit] {
+  height: 38px;
+  width: 120px;
+  font-family: 'PT Sans Bold', sans-serif;
+  color: white;
+  background-color: #D0181F;
+  border: 0;
+  padding-bottom: 3px;  
+  text-transform: lowercase;
+}
+
+button.inactive{
+  background-color: #F1F2F2;
+  color: #D5D7D8;
+}
+
+/*Собственные кнопки*/
+.select-btn {
+  display: inline-block;
+  width: 44px;
+  text-transform: uppercase;
+}
+
+.select-btn input[type=radio] {
+  display: none;
+}
+
+.select-btn > input:checked + span {
+  height: 22px;
+  border-bottom: 2px solid #010101;
+  font-family: 'PT Sans Bold', sans-serif;
+}
+
+.select-btn > span {
+  display: block;
+  width: 44px;
+  height: 24px;
+  text-align: center;
+  padding-top: 2px;
+  background-color: #F1F2F2;
+}
+
+.radio-btn input[type=radio]{
+  display: none;
+}
+
+.radio-btn > input[type=radio] + span {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+}
+
+.radio-btn > input[type=radio] + span {
+  background-image: url(img/radio-btn.png);
+}
+
+.radio-btn > input[type=radio]:checked + span {
+  background-image: url(img/radio-btn-enabled.png);
+}
+
+.checkbox-btn {
+  font-size: 16px;
+}
+
+.checkbox-btn input[type=checkbox]{
+  display: none;
+}
+
+.checkbox-btn > input[type=checkbox] + span{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 12px;
+}
+
+.checkbox-btn input[type=checkbox]  + span {
+  margin-top: 5px;
+  background-image: url(img/checkbox-btn.png);
+  background-position: 0px 0px;
+}
+
+.checkbox-btn input[type=checkbox]:checked  + span {
+  margin-top: 0px;
+  height: 22px;
+  background-image: url(img/checkbox-btn-enabled.png);
+}
+
+.remove-btn {
+  background-image: url(img/remove-btn.png);
+  background-color: transparent;
+  width: 23px;
+  height: 22px;
+}
+
+.remove-btn-mini {
+  background-image: url(img/remove-btn-mini.png);
+  background-color: transparent;
+  width: 10px;
+  height: 11px;
+}
+
+.dropdown-btn {
+  background-image: url(img/dropdown-disabled.png);
+  width: 11px;
+  height: 11px;
+  background-color: transparent;
+}
+
+.dropdown-btn.active{
+  background-image: url(img/dropdown-enabled.png);
+}
+
+/*Header*/
+
+header.header {
+  margin-top: 0;
+  margin-left: 46px;
+  height: 140px;
+  position: relative;
+}
+
+.logo {
+  margin-top: 32px;
+  margin-right: 25px;
+  float: left;
+}
+
+.header-contacts {
+  padding-top: 39px;
+  margin-bottom: 7px;
+}
+
+.header-contacts p {
+  font-size: 12px;
+  color: #939598;
+  margin-left: 109px;
+  margin-top: -1px;
+}
+
+header.header nav {
+  margin-left: 108px;  
+}
+
+header.header li {
+  display: inline;
+  margin-right: 23px;
+}
+
+header.header nav li:nth-child(4) a{
+  color: #D0181F;
+}
+
+/*Модуль авторизации*/
+
+.profile {
+  float: right;
+  margin-top: -44px;
+  margin-right: 58px;
+}
+
+.basket {
+  float: right;
+  margin-top: -19px;
+  margin-right: 58px;
+  color: #333132;
+}
+
+/*Форма входа в лк*/
+
+.header-sign-in {
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  width: 388px;
+  height: 270px;
+  border: 2px solid #231F20;
+  background-color: white;
+}
+
+.header-sign-in a:first-child {
+  float: right;
+  margin-top: 24px;
+  margin-right: 29px;
+}
+
+.header-sign-in form {
+  clear: both;
+  margin-top: 75px;
+  margin-left: 29px;
+}
+
+.header-sign-in label {
+  display: inline-block;
+  width: 70px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+}
+
+.header-sign-in input {
+  width: 228px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+}
+
+.header-sign-in div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 238px;
+  height: 36px;
+  border: 1px #9D9FA2 solid;
+}
+
+.header-sign-in div input {
+  display: inline-block;
+  border: none;
+  width: 192px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+label.visible-password-checkbox {
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: -4px;
+}
+
+label.visible-password-checkbox input[type=checkbox] {
+  display: none;
+}
+
+label.visible-password-checkbox div {
+  display: block;
+  background-image: url(img/unmasked-password.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 36px;
+  width: 36px;
+  border: none;
+}
+
+label.visible-password-checkbox > input:checked + div {
+  background-image: url(img/masked-password.png);
+}
+
+.header-sign-in .remind-password {
+  display: inline-block;
+  font-family: "PT Sans Bold", sans-serif;
+  color: #D0181F;
+  margin-top: 31px;
+  margin-left: 87px;
+  margin-right: 12px;
+}
+
+.header-sign-in form button {
+  width: px;
+}
+
+/*Корзина пользователя*/
+
+.basket-contents {
+  height: 580px;
+  width: 388px;
+  position: absolute;
+  top: 52px;
+  right: 27px;
+  border: 2px solid #231F20;
+  background-color: white;
+}
+
+.basket-contents span:first-child {
+  display: block;
+  margin-top: 25px;
+  margin-right: 29px;
+  text-align: right;
+  margin-bottom: 26px;
+}
+
+.basket-contents div {
+  height: 428px;
+  width: 333px;
+  margin-left: 28px;
+  overflow: auto;
+}
+
+.basket-contents .to-order {
+  width: 192px;
+  margin-top: 20px;
+  margin-left: 167px;
+}
+
+.basket-item {
+  height: 137px;
+  margin-bottom: 10px;
+}
+
+.basket-item img {
+  width: 91px;
+  height: 137px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 26px;
+}
+
+.basket-item section {
+  height: 137px;
+  display: inline-block;
+  vertical-align: top;
+  width: 176px;
+}
+
+.basket-item section span:nth-of-type(1), .basket-item section a {
+  font-family: 'PT Serif Italic', sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.basket-item section a {
+  margin-bottom: 3px;
+}
+
+.basket-item section span:nth-of-type(2) {
+  display: block;
+  font-family: 'PT Sans Bold', sans-serif;
+  margin-bottom: 5px;
+}
+
+.basket-item section p {
+  font-size: 12px;
+}
+
+.basket-item .remove-btn-mini {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1px;
+}
+
+/*Футер*/
+
+footer.footer {
+  height: 209px;
+  width: 1171px;
+  margin-left: 55px;
+  border-top: 2px #010101 solid;
+  color: #333132;
+}
+
+footer.footer nav{
+  margin-top: 33px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 17px;
+  width: 230px;
+}
+
+footer.footer nav li {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 6px;
+}
+
+footer.footer nav li:nth-child(odd) {
+  width: 107px;
+}
+
+footer nav:first-child li:nth-child(7) a{
+  color: #D0181F;
+}
+
+footer.footer p {
+  font-size: 12px;
+  color: #9D9FA2;
+}
+
+footer.footer div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer.footer div:first-of-type {
+  margin-top: 36px;
+  margin-left: 180px;
+}
+
+footer.footer div:first-of-type p {
+  margin-bottom: 23px;
+}
+
+footer.footer div:first-of-type p a {
+  font-size: 12px;
+}
+
+footer.footer span {
+  color: #231F20;
+  font-family: 'PT Sans Bold', sans-serif;
+}
+
+.footer-contacts {
+  margin-top: 33px;
+  margin-left: 25px;
+}
+
+.footer-contacts p {
+  margin-top: 3px;
+  margin-left: 9px;
+}
+
+.footer-contacts a {
+  font-size: 12px;
+}
+
+.footer-subscribe {
+  margin-top: 33px;
+  margin-left: 24px;
+}
+
+.footer-subscribe p {
+  line-height: 1;
+  margin-bottom: 12px;
+  margin-top: 1px;
+}
+
+.footer-subscribe input {
+  width: 239px;
+  padding-left: 11px;
+  padding-bottom: 4px;
+}
+
+.footer-subscribe button {
+  vertical-align: top;
+  width: 116px;
+  background-color: #9D9FA2;
+}
+
+/*Содержимое*/
+
+section.main {
+
+}
+
+/*Боковая панель*/
+
+.side-panel {
+  display: inline-block;
+  width: 170px;
+  margin-left: 55px;
+  margin-right: 66px;
+  border-top: 2px #050606 solid;
+}
+
+.side-panel a {
+  color: #333132;
+}
+
+/*Навигация на боковой панели*/
+
+.side-nav ul {
+  margin-left: 17px;
+}
+
+.side-nav li:first-child {
+  margin-top: 11px;
+}
+
+.side-nav li {
+  margin-bottom: 6px;
+}
+
+.side-nav li.active {
+  list-style: disc;
+  margin-left: 2px;
+}
+
+.side-nav li.active a {
+  margin-left: -2px;
+  font-family: 'PT Sans Bold', sans-serif;
+  text-decoration: none;
+}
+
+/*Фильтр общее*/
+
+.filter {
+  padding-bottom: 7px;
+  border-bottom: 2px #050606 solid;
+}
+
+.filter span {
+  display: block;
+  margin-top: 11px;
+  margin-bottom: 6px;
+  padding-left: 16px;
+  font-family: 'PT Sans Bold', sans-serif;
+  text-decoration: underline;
+  background-image: url(img/dropdown-disabled.png);
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+}
+
+.filter span.dropdown {
+  background-image: url(img/dropdown-enabled.png);
+}
+
+.filter li {
+  list-style: none;
+}
+
+.filter li:last-child {
+  margin-bottom: 9px;
+}
+
+/*Фильтр по одному значению на боковой панели*/
+
+.filter-single ul {
+  margin-left: 16px;
+}
+
+.filter-single li {
+  margin-bottom: 6px;  
+}
+
+.filter-single li.active {
+  list-style: disc;
+  margin-left: 3px;
+}
+
+.filter-single li.active a {
+  margin-left: -3px;
+  font-family: 'PT Sans Bold', sans-serif;
+}
+
+/*Фильтр по нескольким значениям на боковой панели*/
+
+.filter-multiple li {
+  padding-left: 16px;
+  margin-bottom: 6px;  
+  background-image: url(img/radio-btn.png);
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+}
+
+.filter-multiple li.active {
+  background-image: url(img/radio-btn-enabled.png);
+}
+
+.filter-multiple li.not-available {
+  background-image: url(img/radio-btn-not-available.png);
+}
+
+.filter-multiple li.not-available a {
+  color: #9D9FA2;
+}
+
+.filter-multiple ul a {
+  text-decoration: none;
+}
+
+section.content {
+  display: inline-block;
+  vertical-align: top;
+  color: #333132;
+  max-width: 935px;
+  margin-right: 267px;
+}
+
+section.content h1 {
+  font-family: 'PT Sans Bold', sans-serif;
+  font-size: 30px;
+  margin-top: 2px;
+  margin-bottom: 27px;
+}
+
+section.content h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 2px;
+}
+
+section.content h2:first-child {
+  margin-top: -5px;
+}
+
+section.content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+section.content .content-column-2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section.content .content-column-2:last-child {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 116px;
+}
+
+/* Раздел "Анкета"*/
+/* Форма для редактирования информации профиля*/
+
+.content .profile-edit {
+  width: 350px;
+  margin-top: 0px;
+  margin-left: 1px;
+}
+
+.profile-edit label {
+  display: inline-block;
+  width: 70px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+}
+
+.profile-edit label:last-of-type {
+  margin-bottom: 18px;
+}
+
+.profile-edit input {
+  height: 35px;
+  width: 228px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+
+.profile-edit .gender-selection {
+  margin-top: 28px;
+  margin-bottom: 35px;
+}
+
+.profile-edit .gender-selection span:first-child {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.profile-edit .select-btn {
+  width: 44px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.profile-edit .select-btn > span {
+  display: block;
+  width: 44px;
+  height: 24px;
+  text-align: center;
+  padding-top: 2px;
+  background-color: #F1F2F2;
+}
+
+.profile-edit .select-btn:nth-of-type(2) {
+  margin-right: 83px;
+}
+
+.content .change-password {
+  color: #D0181F;
+  margin-left: 90px;
+}
+
+.content form button {
+  width: 210px;
+  margin-top: 48px;
+  margin-left: 90px;
+}
+
+/* Каталог товаров */
+.catalog {
+  border-top: 2px black solid;
+  width: 930px;
+}
+
+.catalog .items-filter {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.catalog a.active {
+  text-decoration: none;
+  font-family: 'PT Sans Bold', sans-serif;
+}
+
+/*Блок товара*/
+
+.catalog section.item, .deferred .item  {
+  display: inline-block;
+  font-family: 'PT Serif Italic', sans-serif;
+  width: 210px;
+  margin-left: 26px;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.catalog section.item:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.catalog section.item:nth-of-type(4n+6) {
+  margin-left: 0;
+}
+
+.catalog .item div, .deferred .item div{
+  width: 210px;
+  height: 314px;
+  border-bottom: 2px black solid;
+  background-color: #F1F2F2;
+}
+
+.catalog .item img, .deferred .item img {
+  width: 210px;
+  height: 314px;
+}
+
+.catalog .item a, .deferred .item a{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.catalog span, .deferred .item span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+.catalog span.price, .deferred span.price {
+  font-family: 'PT Sans Bold', sans-serif;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+/*Большой блок товара*/
+
+.catalog section.item-big {
+  width: 450px;
+  color: #D0181F;
+  float: left;
+  margin-right: 4px;
+}
+
+.catalog section.item-big div {
+  width: 450px;
+  height: 708px;
+  border-bottom: 2px solid #D0181F;
+}
+
+.catalog section.item-big img {
+  width: 450px;
+  height: 708px;
+}
+
+.catalog section.item-big a {
+  color: #D0181F;
+}
+
+/*Навигация между страницами каталога*/
+
+.catalog section.pages-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*Подготовка заказа к оплате*/
+
+.checkout-container {
+  margin-left: 174px;
+}
+
+/*Панель шагов оформления заказа*/
+
+.checkout-steps {
+  height: 51px;
+  width: 931px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 18px;
+  margin-bottom: 55px;
+}
+
+.checkout-steps span {
+  font-size: 25px;
+  color: #9D9FA2;
+}
+
+.checkout-steps span.active {
+  font-family: 'PT Sans Bold', sans-serif;
+  color: #333132;
+}
+
+.checkout-steps span:first-child {
+  margin-left: 202px;
+}
+
+.checkout-steps span.checkout-arrow {
+  display: inline-block;
+  vertical-align: text-top;
+  background-image: url(img/checkout-arrow.png);
+  width: 39px;
+  height: 9px;
+  margin-left: 43px;
+  margin-right: 27px;
+}
+
+.checkout-steps span.checkout-arrow:nth-child(4) {
+  margin-left: 48px;
+}
+
+/*Товар*/
+
+.checkout-container .item {
+  position: relative;
+  width: 1000px;
+  clear: both;
+  margin-bottom: 53px;
+}
+
+.checkout-container .item img {
+  float: left;
+  margin-right: 29px;
+  margin-top: 5px;
+}
+
+.checkout-container .item .item-name {
+  font-family: 'PT Sans Bold', sans-serif;
+  font-size: 30px;
+  margin-left: -2px;
+}
+
+.checkout-container .item p {
+  margin-top: 6px;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.checkout-container .item label {
+  display: block;
+}
+
+.checkout-container .item .size-selection label {
+  display: inline-block;
+}
+
+.checkout-container .item form .size-selection {
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.checkout-container .item input[type=number] {
+  margin-top: 10px;
+  width: 73px;
+  height: 38px;
+  border: 1px solid #9D9FA2;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.checkout-container .item .item-price {
+  position: absolute;
+  top: 0px;
+  right: 70px;
+}
+
+.checkout-container .item .item-price span:first-child {
+  color: #9D9FA2;
+}
+
+.checkout-container .item .item-price span:nth-child(2) {
+  font-family: 'PT Sans Bold', sans-serif;
+  font-size: 30px;
+  color: #333132;
+}
+
+.checkout-container .item button {
+  position: absolute;
+  top: 9px;
+  right: 17px;
+}
+
+/*Нижняя панель перехода к следующему шагу оформления заказа*/
+
+.checkout-container .checkout-next-step { 
+  border-top: 2px solid black;
+  margin-top: 62px;
+  width: 931px;
+}
+
+.checkout-container .checkout-next-step .promo-code { 
+  margin-top: 38px;
+  float: left;
+}
+
+.checkout-container .checkout-next-step .promo-code input[type=text] { 
+  margin-left: 13px;
+  height: 35px;
+  width: 132px;
+  border: 1px solid #9D9FA2;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: inline-block;
+}
+
+.checkout-container .checkout-next-step .promo-code input[type=submit] { 
+  color: white;
+  font-family: 'PT Sans Bold', sans-serif;
+  width: 116px;
+  height: 37px;
+  border: 0;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 2px;
+  background-color: #9D9FA2;
+}
+
+.checkout-container .checkout-next-step .result-price {
+  text-align: right;
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+
+.checkout-container .checkout-next-step .result-price span:first-child {
+  color: #9D9FA2;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.checkout-container .checkout-next-step .result-price span:nth-of-type(2) {
+  color: #333132;
+  font-family: 'PT Sans Bold', sans-serif;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.checkout-container .checkout-next-step .result-price .checkout-goto-next-step {
+  width: 285px;
+}
+
+.checkout-container .rules-aproving {
+  float: left;
+  margin-top: 85px;
+}
+
+/*Выбор способа доставки*/
+
+.checkout-container .delivery-container {
+  height: 500px;
+  clear: both;
+  margin-bottom: 95px;
+}
+
+.order-info {
+  float: left;
+}
+
+.order-info p {
+  line-height: 1.55;
+  margin-top: 23px;
+}
+
+.order-info p:nth-of-type(1) {
+  margin-top: 0px;
+}
+
+.checkout-container .delivery-methods {
+  margin-left: 406px;
+  padding-top: 2px;
+  width: 525px;
+}
+
+.delivery-methods div > span {
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.delivery-methods div > span.active {
+  font-family: 'PT Sans Bold', sans-serif;
+  float: left;
+  border: none;
+  margin-bottom: 32px;
+}
+
+.delivery-methods div section > .delivery-price {
+  font-family: 'PT Sans Bold', sans-serif;
+  display: block;
+  text-align: right;
+}
+
+div .clear-float {
+  clear: both;
+}
+
+.delivery-methods section > form {
+  clear: both;
+  margin-bottom: 14px;
+}
+
+.delivery-methods section > form label {
+  display: inline-block;
+  width: 106px;
+  margin-bottom: 22px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.delivery-methods section > form input {
+  height: 38px;
+  width: 393px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.delivery-methods section > form textarea {
+  height: 111px;
+  width: 393px;
+  padding: 10px;
+}
+
+.delivery-methods section > form > section {
+  display: inline-block;
+  width: 413px;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+.delivery-methods section > form .radio-btn {
+  width: auto;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.delivery-methods div section > p {
+  display: block;
+  margin-top: -16px;
+  line-height: 1.55;
+}
+
+.delivery-methods div section > iframe {
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+
+/*Выбор способа оплаты заказа*/
+
+.checkout-container .payment-container {
+  clear: both;
+  margin-bottom: 60px;
+}
+
+.checkout-container .payment-info {
+  margin-left: 405px;
+  width: 532px;
+}
+
+.checkout-container .payment-info .result-price {
+  padding-top: 2px;
+  font-family: 'PT Sans Bold', sans-serif;
+  color: black;
+  margin-bottom: 46px;
+}
+
+.checkout-container .payment-info .result-price span:first-child {
+  margin-right: 80px;
+}
+
+.payment-methods {
+  display: block;
+}
+
+.payment-methods span:first-child {
+  float: left;
+}
+
+.payment-methods .radio-btn {
+  display: block;
+  margin-left: 125px;
+  margin-bottom: 7px;
+}
+
+.payment-methods .radio-btn > input[type=radio] + span {
+  margin-right: 7px;
+}
+
+.payment-methods input[type=submit] {
+  margin-left: 240px;
+  margin-top: 113px;
+  width: 285px;
+}
+
+/*Личный кабинет*/
+
+/*Заказы*/
+
+.content .order {
+  width: 570px;
+  border-top: 1px solid #9D9FA2;
+  min-height: 50px;
+}
+
+.content .order:last-child {
+  border-bottom: 1px solid #9D9FA2;
+  margin-bottom: 70px;
+}
+
+.order .order-info {
+  margin-top: 15px;
+}
+
+.order-info span {
+  display: inline-block;
+}
+
+.order-info .order-number {
+  width: 190px;
+}
+
+.order-info .order-date {
+  width: 130px;
+}
+
+.order-info .order-status {
+  width: 220px;
+}
+
+.order-info .dropdown-btn {
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(180deg);
+}
+
+.order-info .dropdown-btn.active {
+  transform: rotate(0deg);
+}
+
+.order div{
+  margin-top: 72px;
+}
+
+.order-item {
+  margin-bottom: 17px;
+}
+
+.order-item img {
+  width: 92px;
+  height: 136px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+}
+
+.order-item section{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.order-item section:nth-of-type(1) {
+  width: 280px;
+}
+
+.order-item p {
+  margin-top: 4px;
+}
+
+.order-item .order-price {
+  width: 166px;
+  text-align: right;
+}
+
+.order-item .order-price span:first-child {
+  font-size: 12px;
+  color: #939598;
+}
+
+.order-item .order-price span:last-child {
+  color: #231F20;
+}
+
+.order .order-delivery {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.order-delivery p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.order-delivery p:first-child {
+  margin-right: 150px;
+}
+
+.order-delivery p:nth-child(2) {
+  text-align: left;
+  margin-right: 7px;
+}
+
+.order-delivery p:nth-child(3) {
+  text-align: right;
+  width: 80px;
+}
+
+.order-delivery p span {
+  color: #939598;
+  font-size: 12px;
+}
+
+.order-delivery a {
+  color: #D0181F;
+  margin-left: 467px;
+}
+
+.side-panel-right {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 13px;
+}
+
+.side-panel-right li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.side-panel-right a.active {
+  text-decoration: none;
+  font-family: 'PT Sans Bold', sans-serif;
+}
+
+/*Отложенное*/
+
+.main .deferred {
+  display: inline-block;
+  vertical-align: top;
+  width: 930px;
+  margin-bottom: 28px;
+}
+
+.deferred .item:nth-child(4n+1) {
+  margin-left: 0px;
+}
+
+.deferred .item {
+  margin-left: 26px;
+  margin-bottom: 28px;
+}
+
+.deferred .item.hot {
+  color: #D0181F;
+}
+
+.deferred .item.hot a {
+  color: #D0181F;
+}
+
+.deferred .item.hot div {
+  border-bottom: 2px solid #D0181F;
+}
