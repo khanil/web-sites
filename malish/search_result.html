@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+  </head>
+  <body>
+
+    <!-- Чтобы кнопка вызывала модальное окно добавляй следующую строку к кнопке
+    data-toggle="modal" data-target="#modal-appointment" -->
+    <div class="modal fade" id="modal-appointment" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times-circle"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="section-form">
+              <form action="" method="POST" role="form">
+              
+                <div class="form-inline">
+                  <div class="form-group">
+                    <input type="text" id="" placeholder="ФИО">
+                  </div>
+                
+                  <div class="form-group">
+                    <input type="text" id="" placeholder="Телефон">
+                  </div>
+                </div>
+
+                <div class="form-inline">
+                  <div class="form-group">
+                    <input type="text" id="" placeholder="Email">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" id="" placeholder="Специалист">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <textarea type="text" id="" placeholder="Требуемая услуга" rows="5"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-rect btn-submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="navbar navbar-fixed-top navbar-transparent" id="header">
+      <nav class="navbar-min">
+        <div class="container-fluid">
+          <div class="navbar-right">
+            <ul class="nav navbar-nav">
+              <li><a href="partners.html">Партнеры</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="btn-group">
+              <button type="button" class="btn btn-rect dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Детский центр Крепыш<i class="fa fa-angle-down"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-left">
+                <li><a href="#">Детский центр Крепыш</a></li>
+                <li><a href="#">Центр здоровья семьи</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="clearfix"></div>
+
+      <nav class="navbar-main">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> -->
+            <a class="navbar-brand" href="index.html"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О клинике</a></li>
+              <li><a href="services.html">Услуги</a></li>
+              <li><a href="oms.html">Омс</a></li>
+              <li><a href="staff.html">Персонал</a></li>
+              <li><a href="legal-info.html">Юридическая информация</a></li>
+            </ul>
+            <div class="navbar-search">
+              <form action="" method="POST" class="form-inline" role="form">
+              
+                <div class="form-group">
+                  <label class="sr-only" for="">Введите запрос</label>
+                  <input type="text" class="form-control" id="" placeholder="Введите запрос">
+                </div>
+              
+                <button type="submit" class="btn btn-rect btn-rect-white">Поиск</button>
+              </form>
+            </div>
+            <button class="btn btn-search" id="btn-search">
+              <i class="fa fa-search"></i>
+            </button>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </header>
+
+    <section class="section" id="section-search-results">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-header">
+              <h2>Результаты поиска по запросу: "прием гинеколога"</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-text-content section-search-result">
+              <h3>Прием гинеколога Перепелкиной</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione error amet nostrum, nobis exercitationem deleniti ullam, repellat illum, voluptates hic distinctio tenetur est iste animi quaerat. Ipsam, architecto corporis nesciunt!</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-text-content section-search-result">
+              <h3>Прием гинеколога Перепелкиной</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione error amet nostrum, nobis exercitationem deleniti ullam, repellat illum, voluptates hic distinctio tenetur est iste animi quaerat. Ipsam, architecto corporis nesciunt!</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-text-content section-search-result">
+              <h3>Прием гинеколога Перепелкиной</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione error amet nostrum, nobis exercitationem deleniti ullam, repellat illum, voluptates hic distinctio tenetur est iste animi quaerat. Ipsam, architecto corporis nesciunt!</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-pagination pull-right">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      Предыдущая
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      Следующая
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="container-content row">
+          <div class="col-xs-4">
+            <div class="row">
+              <div class="col-xs-1 col-xs-offset-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-xs-8">
+                <p class="footer-col-content footer-address">
+                  Сенной пер., 8,<br/>
+                  Кострома, Костромская обл.,<br/>
+                  Россия, 156000
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="row">
+              <div class="col-lg-5 col-lg-offset-0 col-xs-1 col-xs-offset-2 phone-wrapper">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-lg-7 col-xs-8">
+                <p class="footer-col-content footer-phones">
+                  +7 (4942) 37-34-32<br/>
+                  +7 (4942) 35-13-34<br/>
+                  +7-960-744-8888
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="row">
+              <div class="col-xs-1 col-xs-offset-1">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <div class="col-xs-8">
+                <p class="footer-col-content footer-work-hour">
+                  Пн - Пт:  с 8:00 до 20:00<br/>
+                  Сб:   с 9:00 до 15:00
+                </p>
+                <button class="btn-rect btn-rect-white" data-toggle="modal" data-target="#modal-appointment">Записаться на прием</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-2">
+                <div class="copyright">&copy 2016 ООО «ГИНЕКОЛОГ и Я» </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="./scripts/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template: "spb label label knt";
+  padding: 8px 15px 0px;
+}
+
+.label {
+  grid-area: label;
+  padding: 0 5%;
+}
+
+.spb {
+  grid-area: spb;
+}
+
+.knt {
+  grid-area: knt;
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template:
+      "label label"
+      "spb   knt";
+  }
+}

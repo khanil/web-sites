@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,300,400');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font: caption;
+    color: #fff;
+    background-image: url(./222.jpg);
+    background-color: gray;
+    background-size: cover;
+    /*background-position: center center;*/
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.spb {
+    color: white !important;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 1em;
+    margin: 0;
+    color: #fff;
+}
+
+.cc {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: rgba(255,0,0,0.8);
+    white-space: nowrap;
+}
+
+.an {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: red;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    white-space: nowrap;
+}
+
+.knt {
+    color: white !important;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    font-variant: small-caps;
+    line-height: 1em;
+    color: #fff;
+    text-align: right;
+}
+
+.navbar-knt {
+    padding-top: 5px;
+    font-size: 20px !important;
+    color: white !important;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+    line-height: 1em;
+    color: #fff;
+    text-align: left;
+}
+
+nav {
+    background-color: rgba(1,1,1,0.5) !important;
+    border: none !important;
+    font-size: 18px;
+}
+
+.nav li:first-child {
+    margin-left: 0;
+}
+
+.nav li > a {
+    color: #fff !important;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    padding-top: 10px !important;
+    cursor: pointer;
+}
+
+.nav a > span {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}
+
+.nav > li > a:hover,.nav > li.active > a {
+    color: red !important;
+    background-color: transparent;
+}
+
+.nav > li.active > a > span,.nav > li > a:hover > span {
+    border-bottom: 1px solid red;
+}
+
+.navbar-header button {
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+
+.header {
+    padding-top: 8px;
+    margin-bottom: 80px;
+}
+
+.info-container {
+    margin-bottom: 20px;
+}
+
+.info-block {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1em;
+    color: red;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-transition: visibility 0s, opacity 0.5s ease-in-out;
+    -moz-transition: visibility 0s, opacity 0.5s ease-in-out;
+    -o-transition: visibility 0s, opacity 0.5s ease-in-out;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.info-block li {
+    margin-bottom: 7px;
+}
+
+.info-block-active {
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+@media (min-width:768px) {
+ .navbar {
+    min-height:30px;
+ }
+
+ .navbar-knt {
+    display: none;
+ }
+}
+
+@media (max-width:768px) {
+ .knt {
+    display: none;
+ }
+}
+
+@media (min-width: 1210px) {
+    .nav li {
+        margin-left: 25px;
+    }
+
+    #about {
+        left: -175px;
+    }
+
+    #law {
+        left: -80px;
+    }
+
+    #protection {
+        left: 15px;
+    }
+
+    #consulting {
+        left: 95px;
+    }
+
+    #control {
+        left: 190px
+    }
+
+    #builders {
+        left: 285px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .cc {
+        font-size: 40px;
+    }
+
+    .an {
+        font-size: 22px;
+    }
+
+    .nav {
+        font-size: 13px;
+    }
+
+    #about {
+        left: -64px;
+    }
+
+    #law {
+        left: -21px;
+    }
+
+    #protection {
+        left: 22px;
+    }
+
+    #consulting {
+        left: 88px;
+    }
+
+    #control {
+        left: 131px
+    }
+
+    #builders {
+        left: 174px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .nav li > a {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #about {
+        left: -15px;
+    }
+
+    #law {
+        left: 3px;
+    }
+
+    #protection {
+        left: 21px;
+    }
+
+    #consulting {
+        left: 89px;
+    }
+
+    #control {
+        left: 107px
+    }
+
+    #builders {
+        left: 125px;
+    }
+}
+
+@media (min-width: 890px) {
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float: none;
+    }
+
+    .nav li {
+        margin-left: 0;
+    }
+
+    .knt span {
+        display: none;
+    }
+
+    .info-container {
+        width: 890px;
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        margin-left: -445px;
+    }
+
+    .info-block {
+        width: 750px;
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    .an {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .cc {
+        font-size: 25px;
+        padding-bottom: 2px;
+    }
+
+    .spb {
+        display: none;
+    }
+
+    .knt {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .navbar li {
+        margin-left: 0;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+}
+
+/*Changes navbar collapse breakpoint*/
+@media (max-width: 890px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+        margin-left: 10px;
+    }
+
+    .navbar-nav>li:first-child {
+        margin-left: 10px;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+
+    .header {
+        padding-top: 75px;
+    }
+
+    .navbar {
+        background-color: rgba(1,1,1,0.75) !important;
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        margin-bottom: 7.5px;
+    }
+}

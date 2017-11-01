@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8"></meta>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./fullpage/jquery.fullpage.css">
+  <script type="text/javascript" src="./fullpage/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="./fullpage/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="./fullpage/jquery.fullpage.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      $('#preloader').delay(500).fadeOut(1000, 'easeOutCirc');
+    });
+  </script>
+</head>
+<body>
+  <div id="fullpage">
+    <div id="section-home" class="section active" data-anchor="home">
+      <div class="section-content">
+        <h1 id="logo-big" class="title-big">Licky-licky</h1>
+        <p>
+          Новая линейка жидкостей Licky-licky&nbsp;&mdash; настоящее поле для<br/>
+          экспериментов, предоставленное фанатам и&nbsp;любителям пара.<br/>
+          Вызов, пробуждающийся в&nbsp;нашем природном начале,<br/>
+          с&nbsp;которым невозможно совладать.<br/>
+        </p>
+        <span>Lick it. Vape it.</span>
+      </div>
+    </div>
+    <div id="section-advantages" class="section" data-anchor="advantages">
+      <div class="section-content">
+        <div id="about-product-block" class="info-block">
+          <span class="info-block-label">О продукте</span>
+          <p class="info-block-content">
+            Объединив представления о&nbsp;классических сочетаниях ароматов жидкостей для вейпинга и&nbsp;бунтарский дух искателей неизведанного, Licky-licky даёт возможность в&nbsp;буквальном смысле попробовать на&nbsp;вкус страсть, похоть и&nbsp;любовь. Тот самый случай, когда ты&nbsp;должен взять своё по&nbsp;праву!
+          </p>
+        </div>
+
+        <div id="advantages-list-block" class="info-block">
+          <span class="info-block-label">Преимущества</span>
+          <ul class="info-block-content">
+            <li><span>01</span>Натуральные составляющие</li>
+            <li><span>02</span>Идеальные пропорции</li>
+            <li><span>03</span>Неповторимые вкусы</li>
+            <li><span>04</span>Секретный ингредиент</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="section-tastes" class="section" data-anchor="tastes">
+      <span class="taste-label" id="label-juise-babe">Juicy babe</span>
+      <span class="taste-label" id="label-cream-pie">Cream pie</span>
+      <span class="taste-label" id="label-acid-love">Acid love</span>
+
+      <div class="taste-desc" id="desc-juise-babe">
+        <span class="taste-icon pulse scale" id="icon-juise-babe" data-show="popup-juise-babe"></span>
+        <div class="taste-popup" id="popup-juise-babe">
+          <span class="taste-popup-label">Juicy babe</span>
+          <p>
+            Свежесть фруктового коктейля с&nbsp;оттенками крема во&nbsp;вкусе Juicy babe напомнит о&nbsp;красотке с&nbsp;пляжной вечеринки. И&nbsp;это, чёрт возьми, самая горячая и&nbsp;сочная детка, которую ты&nbsp;в&nbsp;силах себе представить!
+          </p>
+          <span class="cross-btn" data-show="icon-juise-babe"></span>
+        </div>
+      </div>
+
+      <div class="taste-desc" id="desc-cream-pie">
+        <span class="taste-icon pulse scale" id="icon-cream-pie" data-show="popup-cream-pie"></span>
+        <div class="taste-popup" id="popup-cream-pie">
+          <span class="taste-popup-label">Cream pie</span>
+          <p>
+            Игры для двоих? Просто забудьте о&nbsp;том, что слышали об&nbsp;этом раньше&nbsp;&mdash; взбитые сливки на теле даже рядом не&nbsp;стояли с&nbsp;тем, что предлагает Cream pie. О, эти сладкие булочки не&nbsp;выкинуть из&nbsp;головы при всём желании!
+          </p>
+          <span class="cross-btn" data-show="icon-cream-pie"></span>
+        </div>
+      </div>
+
+      <div class="taste-desc" id="desc-acid-love">
+        <span class="taste-icon pulse scale" id="icon-acid-love" data-show="popup-acid-love"></span>
+        <div class="taste-popup" id="popup-acid-love">
+          <span class="taste-popup-label">Acid love</span>
+          <p>
+            Экзотика Acid love, собранная из&nbsp;редких сортов плодов и&nbsp;ягод,&nbsp;&mdash; лучший пример долговечной хиппи-любви в&nbsp;ярком и&nbsp;красочном трипе с&nbsp;кислинкой.
+          </p>
+          <span class="cross-btn" data-show="icon-acid-love"></span>
+        </div>
+      </div>
+    </div>
+    <div id="section-chemist" class="section" data-anchor="chemist">
+      <div class="section-content">
+        <div id="chemist-block" class="info-block">
+          <span class="info-block-label">Химик</span>
+          <div class="info-block-content">
+            <p>
+              Никто никогда не&nbsp;видел этого парня, получившего прозвище Химик. Ходят слухи, раньше он&nbsp;был неким образом причастен к&nbsp;засекреченным разработкам формулы &laquo;абсолютного счастья&raquo;, но&nbsp;бросив это неблагодарное дело, решил дать людям&nbsp;то, чего они заслуживают&nbsp;&mdash; вседозволенность!
+            </p>
+            <p>
+              Его идея проста: любой человек способен получить желаемое. В&nbsp;остальном, остаётся только догадываться, что&nbsp;же в&nbsp;голове у&nbsp;этого безумного гения.
+            </p>
+            <p>
+              Используя самые зашифрованные каналы связи, Химик присылает свои инструкции по&nbsp;изготовлению того, что мы&nbsp;называем Licky-&nbsp;licky. Ясно одно&nbsp;&mdash; когда-нибудь он&nbsp;исчезнет так&nbsp;же внезапно, как и&nbsp;появился.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-contacts" class="section" data-anchor="contacts">
+      <div class="section-content">
+        <span class="title-big">Lick it. Vape it.</span>
+        <div id="contacts-block" class="info-block">
+          <span class="info-block-label">Контакты</span>
+          <ul class="info-block-content">
+            <li>info@licky-vape.com</li>
+            <li>+7 (931) 976 34 20</li>
+            <li><a href="https://vk.com/licky_vape">vk.com</a></li>
+            <li><a href="https://instagram.com/licky_vape">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="grid"></div> -->
+  <div id="preloader"></div>
+
+  <header id="header">
+    <a href="#home" id="header-logo"><h2>Licky-licky</h2></a>
+    <ul id="menu">
+      <li data-menuanchor="home"><a href="#home">Главная</a></li>
+      <li data-menuanchor="advantages"><a href="#advantages">Преимущества</a></li>
+      <li data-menuanchor="tastes"><a href="#tastes">Вкусы</a></li>
+      <li data-menuanchor="chemist"><a href="#chemist">Химик</a></li>
+      <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+    </ul>
+  </header>
+
+  <div id="side-nav">
+    <span id="nav-prev" class="nav-arrow up"></span>
+    <ul>
+      <li class="active"><a href="#home"><span></span></a></li>
+      <li><a href="#advantages"><span></span></a></li>
+      <li><a href="#tastes"><span></span></a></li>
+      <li><a href="#chemist"><span></span></a></li>
+      <li><a href="#contacts"><span></span></a></li>
+    </ul>
+    <span id="nav-next" class="nav-arrow down"></span>
+    <span class="nav-counter"><span id="nav-cur-page">01</span>/05</span>
+  </div>
+
+  <footer id="footer">
+    <div id="footer-tagline">Lick it. Vape it.</div>
+    <div id="copyright">Copyright &copy; 2016 Licky-licky. Все права защищены</div>
+    <div id="footer-social-icons">
+      <a href="https://vk.com/licky_vape"><span class="icon icon-vk"></span></a>
+      <a href="https://instagram.com/licky_vape"><span class="icon icon-inst"></span></a>
+    </div>
+    <div id="footer-logo"></div>
+  </footer>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

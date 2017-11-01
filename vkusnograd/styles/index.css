@@ -1,0 +1,849 @@
+/*Подключение шрифтов*/
+@font-face {
+  font-family: Inglobal;
+  src: url(../fonts/inglobal.ttf);
+}
+
+@font-face {
+  font-family: Andika;
+  src: url(../fonts/AndikaRegular.ttf);
+}
+
+/*Общие положения*/
+
+/*Уберем отступы у всех элементов*/
+* {
+  font-family: 'Andika', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+}
+
+a {
+  color: #fefdfd;
+  font-size: 24px;
+}
+
+/*Заголовки разделов*/
+h2 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+/*Надпись под заголовком раздела*/
+.subtitle {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+button {
+  background-color: #8a1e1e;
+  height: 30px;
+  width: 168px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: none;
+  padding-bottom: 3px;
+}
+
+/*Разделы сайта*/
+.container {
+  margin: auto;
+  min-width: 1200px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*Оболочка для коррекции расположения содержимого раздела*/
+.container-inner-wrapper {
+  height: 100%;
+  width: 994px;
+  position: absolute;
+  left: 50%;
+  margin-left: -497px;
+  margin-top: 41px;
+  z-index: 1;
+}
+
+/*Блок заголовка раздела*/
+.container-inner-wrapper header {
+  margin-left: 65px;
+  margin-bottom: 39px;
+  width: 100%;
+}
+
+/*Блок заказа звонка клтентом*/
+.offer-call-back {
+  width: 250px;
+  text-align: right;
+}
+
+.offer-call-back button {
+  margin-top: 18px;
+  margin-right: 35px;
+}
+
+.offer-call-back a {
+  text-decoration: none;
+}
+
+.phone-number {
+  display: inline-block;
+  font-size: 23px;
+}
+
+.phone-icon {
+  height: 19px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 10px;
+}
+
+/*Титульный раздел*/
+
+#container-title {
+  height: 488px;
+  background-color: gray;
+}
+
+#container-title .container-inner-wrapper {
+  margin-top: 0;
+}
+
+/*Вымпел с логотипом компании*/
+.title {
+  width: 160px;
+  height: 220px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.title img {
+  width: 107px;
+  height: 121px;
+  margin-top: 24px;
+}
+
+.title-name {
+  height: 60px;
+  width: inherit;
+  background-color: #8a1e1e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
+
+.title-name span {
+  font-family: 'Inglobal', sans-serif;
+}
+
+.title-name span:first-child {
+  display: block;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.title-name span:last-child {
+  font-size: 11px;
+}
+
+/*Блок заказа звонка клиентом*/
+#container-title .offer-call-back {
+  position: absolute;
+  top: 24px;
+  right: 0;
+}
+
+#container-title .phone-number {
+  color: #fff;
+}
+
+.phone-icon-white {
+  background-image: url(../images/phone-white.png);
+}
+
+/*Удленение меню навигации*/
+#container-title .decor-panel {
+  background-color: #ff6633;
+  height: 60px;
+  width: 9999px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*Навигация*/
+
+nav {
+  width: 1097px;
+  height: 60px;
+  background-color: #ff6633;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav ul {
+  margin-top: 22px;
+  margin-left: 42px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #fefdfd;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:active {
+  color: #8a1e1e;
+  text-decoration: underline;
+}
+
+nav li:first-child {
+  margin-right: 48px;
+}
+
+nav li:nth-child(2) {
+  margin-right: 58px;
+}
+
+nav li:nth-child(3) {
+  margin-right: 80px;
+}
+
+nav li:nth-child(4) {
+  margin-right: 80px;
+}
+
+nav li:last-child{
+  margin-left: 60px;
+}
+
+
+/*Раздел услуги*/
+
+#container-services {
+  height: 551px;
+  background-color: #f9cdb4;
+}
+
+#container-services h2 {
+  color: #8b191d;
+}
+
+#container-services .subtitle {
+  color: #fefcfc;
+}
+
+.services-wrapper {
+  width: 100%;
+}
+
+.service {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f6e9e2;
+  width: 235px;
+  height: 357px;
+  position: relative;
+}
+
+.service:not(:first-child) {
+  margin-left: 13px;
+}
+
+/*Иконки раздела услуги*/
+.service-icon {
+  width: 90px;
+  height: 90px;
+  margin-top: 27px;
+  margin-left: 73px;
+  margin-bottom: 13px;
+}
+
+/*Иконка вилка-нож*/
+.icon-fork {
+  background-image: url(../images/fork.png);
+  width: 83px;
+  margin-left: px;
+}
+
+/*Иконка торт*/
+.icon-cake {
+  background-image: url(../images/cake.png);
+}
+
+/*Иконка бургер*/
+.icon-burger {
+  background-image: url(../images/burger.png);
+}
+
+/*Иконка поднос*/
+.icon-tray {
+  background-image: url(../images/tray.png);
+}
+
+.service h3 {
+  text-align: center;
+  color: #8a1e1e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.service ul {
+  position: absolute;
+  top: 234px;
+  color: #3a1214;
+  font-size: 14px;
+  margin-left: 22px;
+  list-style-position: inside;
+  width: 200px;
+}
+
+.service li {
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+/*Декоротивное изображение на заднем плане*/
+#container-services .decor-bg-image {
+  height: 538px;
+  width: 518px;
+  background-image: url(../images/background-decor-services.png);
+  background-size: contain;
+  position: absolute;
+  top: -35px;
+  left: -330px;
+  z-index: -1;
+}
+
+/*Раздел бизнесс-ланч*/
+
+#container-business-lunch {
+  background-color: #f6e9e2;
+  height: 518px;
+}
+
+#container-business-lunch h2 {
+  color: #8b191d;
+  line-height: 1.4;
+}
+
+.lunch-menu {
+  width: 994px;
+  height: 300px;
+}
+
+.days-wrapper,
+.menu-wrapper,
+.img-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-wrapper,
+.img-wrapper {
+  margin-left: -5px;
+}
+
+/*Выбор дня недели*/
+.days-wrapper {
+  width: 235px;
+  height: inherit;
+  background-color: #f6d9c7;
+}
+
+.day {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  width: inherit;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c0c1d;
+  padding-top: 25px;
+}
+
+.active-day {
+  color: #fffffe;
+  background-color: #ff904e;
+}
+
+/*Меню по дню недели*/
+.menu-wrapper {
+  width: 295px;
+  height: inherit;
+  background-color: #ff904e;
+  color: #fffffe;
+  font-size: 16px;
+}
+
+.menu-wrapper span {
+  display: block;
+  margin-left: 19px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.menu-wrapper span:nth-of-type(1) {
+  margin-top: 27px;
+}
+
+.menu-wrapper ul {
+  margin-left: 38px;
+  margin-bottom: 22px;
+}
+
+.menu-wrapper li {
+  line-height: 1.2;
+}
+
+/*Картинка соответствующего обеда*/
+.img-wrapper {
+  width: 464px;
+  height: inherit;
+}
+
+.img-wrapper img {
+  width: inherit;
+  height: inherit;
+}
+
+#container-business-lunch .menu,
+#container-business-lunch .lunch-img {
+  display: none;
+}
+
+/*Декоративное изображение на заднем плане*/
+#container-business-lunch .decor-bg-image {
+  height: 672px;
+  width: 647px;
+  background-image: url(../images/background-decor-lunch.png);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: -320px;
+  z-index: -1;
+}
+
+
+/*Раздел стоимости обедов*/
+
+#container-lunch-packs {
+  background-color: #8b191d;
+  height: 539px;
+}
+
+#container-lunch-packs h2 {
+  color: #fffffe;
+}
+
+#container-lunch-packs .subtitle {
+  color: #d0b7ae;
+}
+
+.lunch-packs-wrapper {
+  width: 100%;
+}
+
+.lunch-pack {
+  background-color: #f6e9e2;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 319px;
+  height: 322px;
+  margin-top: 6px;
+}
+
+.lunch-pack:not(:first-child) {
+  margin-left: 14px;
+}
+
+.lunch-pack-inner-wrapper {
+  background-color: #ff904e;
+  width: 100%;
+  height: 132px;
+}
+
+.lunch-conditions,
+.lunch-price {
+  color: #fbf9f8;
+  text-align: center;
+}
+
+.lunch-conditions {
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+.lunch-price {
+  font-size: 28px;
+  margin-top: 25px;
+}
+
+.lunch-info {
+  font-size: 14px;
+  color: #3a1214;
+  width: 272px;
+  margin-left: 24px;
+  margin-top: 24px;
+  line-height: 1.5;
+}
+
+.lunch-pack button {
+  position: absolute;
+  bottom: 25px;
+  left: 75px;
+}
+
+/*Декоротивное изображение на заднем плане*/
+#container-lunch-packs .decor-bg-image {
+  height: inherit;
+  width: 563px;
+  background-image: url(../images/background-decor-lunch-price.png);
+  background-size: contain;
+  position: absolute;
+  top: -35px;
+  left: -280px;
+  z-index: -1;
+}
+
+/*Раздел преимуществ компании*/
+
+#container-advantages {
+  background-color: #ff904e;
+  height: 400px;
+}
+
+#container-advantages .container-inner-wrapper {
+  height: 100%;
+  background-color: #fff;
+  margin-top: 0px;
+  width: 100%;
+}
+
+#container-advantages .container-header {
+  margin-top: 41px;
+  margin-bottom: 65px;
+}
+
+#container-advantages h2 {
+  color: #6d1417;
+}
+
+.advantages-wrapper {
+  width: 927px;
+  margin-left: 65px;
+}
+
+.advantage {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.advantage:nth-child(2n) {
+  margin-left: 94px;
+}
+
+.advantage-row:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.advantage-icon {
+  background-image: url(../images/thumb-up.png);
+  display: inline-block;
+  width: 52px;
+  height: 47px;
+  margin-right: 28px;
+}
+
+.advantage-text {
+  display: inline-block;
+  color: #8b191d;
+  font-size: 14px;
+  width: 340px;
+  line-height: 1.5;
+}
+
+.advantage:nth-child(2n) .advantage-text {
+  width: 320px;
+}
+
+/*Центрирование текста относительно иконки*/
+
+.advantage-text-2-col {
+  vertical-align: 3px;
+}
+
+.advantage-text-3-col {
+  vertical-align: -6px;
+}
+
+/*Раздел отзывов*/
+
+#container-reviews {
+  height: 570px;
+  background-color: #f6e9e2;
+}
+
+#container-reviews h2 {
+  color: #6d1417;
+}
+
+#container-reviews .subtitle {
+  color: #876957;
+  line-height: 1.2;
+}
+
+.review {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ff904e;
+  color: #fdfdfd;
+  text-align: center;
+  width: 318px;
+  height: 344px;
+}
+
+.review:not(:last-child) {
+  margin-right: 15px;
+}
+
+.review img {
+  height: 104px;
+  width: 104px;
+  border-radius: 100px;
+  margin-top: 19px;
+}
+
+.review .username {
+  display: block;
+  font-size: 19px;
+  font-weight: 900;
+  margin-top: 17px;
+}
+
+.review .profession {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+
+.review-text {
+  color: #575454;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  width: 220px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+/*Раздел документов*/
+
+#container-documents {
+  height: 430px;
+  background-color: #f9cdb4;
+}
+
+#container-documents .container-inner-wrapper {
+  margin-top: 0;
+  z-index: 0;
+}
+
+#container-documents .container-header {
+  margin-top: 40px;
+  z-index: 1;
+}
+
+/*Бордовая декоративна панель*/
+#container-documents .decor-panel {
+  background-color: #8b191d;
+  width: 9999px;
+  height: 157px;
+  position: absolute;
+  top: 0;
+  right: 320px;
+  z-index: -1;
+}
+
+#container-documents h2 {
+  color: #fffffe;
+}
+
+#container-documents .subtitle {
+  color: #dbcac0;
+}
+
+.documents-wrapper {
+  width: 100%;
+  margin-top: 83px;
+}
+
+.document {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  width: 150px;
+  height: 180px;
+  text-align: center;
+}
+
+.document:first-child {
+  margin-left: 43px;
+}
+
+.document:not(:first-child) {
+  margin-left: 98px;
+}
+
+.document img {
+  height: 105px;
+  width: 75px;
+  margin-top: 38px;
+}
+
+/*Декоротивное изображение на заднем плане*/
+#container-documents .decor-bg-image {
+  height: 673px;
+  width: 704px;
+  background-image: url(../images/background-decor-documents.png);
+  background-size: contain;
+  position: absolute;
+  top: 110px;
+  right: -300px;
+  z-index: -1;
+}
+
+/*Раздел контакты*/
+
+#container-contacts {
+  height: 411px;
+}
+
+#container-contacts iframe {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+#container-contacts .container-inner-wrapper {
+  margin-top: 0;
+  height: 257px;
+  width: 404px;
+}
+
+#container-contacts .decor-panel {
+  width: 9999px;
+  height: 12px;
+  background-color: #8b191d;
+  margin: 0;
+}
+
+#container-contacts .decor-panel-2 {
+  width: 9999px;
+  height: 101px;
+  background-color: #8b191d;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  z-index: 0;
+}
+
+#container-contacts .container-header {
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 65px;
+  z-index: 1;
+}
+
+#container-contacts h2 {
+  color: #fffffe;
+}
+
+#container-contacts .address {
+  width: 404px;
+  height: 157px;
+  background-color: #ff904e;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  font-size: 18px;
+  color: #fffffe;
+}
+
+#container-contacts .address p {
+  line-height: 1.6;
+  margin-top: 14px;
+  margin-left: 68px;
+}
+
+/*Подвал сайта*/
+
+#container-footer {
+  height: 146px;
+  background-color: #fff;
+}
+
+#container-footer .container-inner-wrapper {
+  margin-top: 0;
+  height: 100%;
+}
+
+#container-footer img {
+  width: 84px;
+  height: 96px;
+  position: absolute;
+  top: 26px;
+  left: 26px;
+}
+
+#container-footer p {
+  width: 400px;
+  font-size: 14px;
+  color: #a38e83;
+  position: absolute;
+  top: 45px;
+  left: 270px;
+  font-weight: 400;
+}
+
+#container-footer .offer-call-back {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+
+#container-footer .phone-number {
+  color: #715c5c;
+}
+
+.phone-icon-gray {
+  background-image: url(../images/phone-gray.png);
+}
